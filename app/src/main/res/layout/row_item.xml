@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:focusable="true"
+    android:clickable="true"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:foreground="@drawable/backgroundpressed">
+    <com.balysv.materialripple.MaterialRippleLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:mrl_rippleDelayClick="false"
+        android:id="@+id/GotoPostItem">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+    <!--this Image view will be change to View Pager and Slide image
+    But later -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            android:id="@+id/TheuserProfilePicture"
+            android:padding="@dimen/_3sdp"
+            android:src="@drawable/user"
+            android:scaleType="centerCrop"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/_12sdp"
+                    android:id="@+id/userName"
+                    android:text="Username"
+                    android:typeface="serif"
+                    android:drawableStart="@drawable/ic_person_black_24dp"
+                    android:layout_marginTop="@dimen/_3sdp"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:paddingStart="@dimen/_3sdp"
+                    android:textColor="#000"/>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:drawableStart="@drawable/ic_watch_later_black_24dp"
+                    android:textColor="@color/lightgrayDarker"
+                    android:drawablePadding="@dimen/_4sdp"
+                    android:textSize="@dimen/_9sdp"
+                    android:typeface="serif"
+                    android:id="@+id/txt_Post_Date" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/postTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#000"
+            android:typeface="serif"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:text=""
+            android:textSize="@dimen/_16sdp"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_margin="@dimen/_4sdp"
+            android:background="@color/lightgray" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_130sdp"
+                android:scaleType="centerCrop"
+                app:riv_corner_radius="@dimen/_3sdp"
+                android:layout_margin="@dimen/_4sdp"
+                android:src="@drawable/gradientback"
+                android:id="@+id/imgPostShow" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/_4sdp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:id="@+id/txtCountViews"
+                android:drawablePadding="@dimen/_9sdp"
+                android:drawableStart="@drawable/ic_remove_red_eye_black_24dp"
+                android:paddingStart="@dimen/_5sdp"
+                android:text="0"
+                android:typeface="serif"
+                android:textColor="#000000"
+                android:textSize="@dimen/_10sdp"
+                tools:ignore="RtlSymmetry" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/_10sdp"
+                android:text="0"
+                android:typeface="serif"
+                android:id="@+id/txtCountComments"
+                android:drawableStart="@drawable/ic_chat_black_24dp"
+                android:layout_gravity="end"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:textColor="#000000"
+                android:drawablePadding="@dimen/_9sdp"/>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:background="@color/lightgray"
+            android:padding="@dimen/_10sdp"/>
+    </LinearLayout>
+    </com.balysv.materialripple.MaterialRippleLayout>
+</android.support.v7.widget.CardView>

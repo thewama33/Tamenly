@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.w4ma.soft.tamenly.CategoryActivities.CarActivity">
+
+
+    <com.baoyz.widget.PullRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_swipe">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rcCar"/>
+
+
+    </com.baoyz.widget.PullRefreshLayout>
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:fab_addButtonColorNormal="#3498db"
+        app:fab_addButtonColorPressed="#74b9ff"
+        app:fab_addButtonPlusIconColor="#ecf0f1"
+        app:layout_constraintStart_toEndOf="@dimen/_4sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/Postgo"
+            android:layout_width="86dp"
+            android:layout_height="68dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="16dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            app:fab_title="Ask"
+            app:fab_colorPressed="#EF5350"
+            app:fab_colorNormal="#E53935"
+            app:fab_icon="@drawable/ic_add_circle_outline_black_24dp"
+            app:fabSize="auto"/>
+
+
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</android.support.constraint.ConstraintLayout>
